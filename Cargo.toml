@@ -1,0 +1,20 @@
+[package]
+name = "seed-quickstart"
+version = "0.1.0"
+authors = ["Simeon Nakov <simeon_nakov@hotmail.com>"]
+edition = "2018"
+
+
+[lib]
+crate-type = ["cdylib"]
+
+
+[dependencies]
+seed = "^0.3.6"
+wasm-bindgen = "^0.2.42"
+web-sys = "^0.3.19"
+js-sys = "0.3.25"
+
+# For serialization, eg sending requests to a server. Otherwise, not required.
+serde = { version = "^1.0.85", features = ['derive'] }
+futures = "^0.1.26"
