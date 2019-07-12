@@ -1,7 +1,6 @@
 #[macro_use]
 extern crate seed;
 use seed::prelude::*;
-use std::i32;
 
 fn genereate_random_number() -> i32 {
     let secret_number = (js_sys::Math::random() * 100.0) as i32;
